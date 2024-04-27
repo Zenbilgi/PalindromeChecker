@@ -18,8 +18,6 @@ public class StringOperation
 
     public static string ReverseString(string input)
     {
-        // return new string(input.Reverse().ToArray());
-
         int len = input.Length;
 
         StringBuilder sb = new StringBuilder();
@@ -30,6 +28,8 @@ public class StringOperation
         }
 
         return sb.ToString();
+
+        // return new string(input.Reverse().ToArray());
     }
 
 }
