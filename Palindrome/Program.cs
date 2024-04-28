@@ -14,7 +14,7 @@ string cleanedInput = StringOperation.RemovePunctuationAndSpaces(input);
 string reversedInput = StringOperation.ReverseString(cleanedInput);
 
 // Check if the cleaned string is equal to its reverse
-bool isPalindrome = cleanedInput.Equals(reversedInput, StringComparison.OrdinalIgnoreCase);
+bool isPalindrome = StringOperation.IsStringPalindrome(cleanedInput, reversedInput);
 
 // Output the result
 Console.WriteLine();

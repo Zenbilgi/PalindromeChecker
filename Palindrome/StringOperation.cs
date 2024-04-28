@@ -32,5 +32,10 @@ public class StringOperation
         // return new string(input.Reverse().ToArray());
     }
 
+    public static bool IsStringPalindrome(string original_str, string reversed_str)
+    {
+        return original_str.Equals(reversed_str, StringComparison.OrdinalIgnoreCase);
+    }
+
 }
 
